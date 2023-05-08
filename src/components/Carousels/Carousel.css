@@ -1,0 +1,77 @@
+.slick-arrow{
+    background-color: red !important;
+    position: absolute !important;
+    right: 0;
+    color: red;
+    z-index: 100;
+    border-radius: 50%;
+    top: -70px !important;
+}
+
+.slick-next{
+    right: 0 !important;
+}
+.slick-prev{
+    left: 0 !important;
+}
+.slick-slider{
+width: 100% !important;
+position: relative;
+}
+.slick-track .product_card{
+    margin-left: 10px;
+}
+.slick-track .product_card .card_img{
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+}
+.trending_carousel{
+    padding-bottom: 80px;
+}
+.slider2{
+    padding: 0;
+    position: relative;
+}
+.slider2 img{
+    width: 100%;
+}
+.slider_section2{
+    position: relative;
+}
+.follow_box{
+    position: absolute;
+    z-index: 150;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) !important;
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 20px 80px;
+}
+.instgram_icon{
+    position: absolute;
+    font-size: 3rem;
+    visibility: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #03010133;
+}
+.follow_box h3{
+    font-weight: 600;
+}
+.follow_box span{
+    color: gray;
+}
+.slider3{
+    padding: 80px 0;
+}
+.slider3 img{
+    max-width: 150px;
+    opacity: 50%;
+    display: inline-block;
+    margin: auto;
+}
+.slider3 img:hover{
+    opacity: 100%;
+}

@@ -1,0 +1,147 @@
+.caption{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.carousel-indicators li{
+    height: 20px;
+    
+}
+.shop_now{
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 2px solid #d23147;
+    background-color: transparent;
+}
+.carousel-caption p{
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.carousel-caption{
+    position: absolute;
+    left: 10% !important;
+    text-align: left !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption button{
+    cursor: pointer;
+}
+.carousel-caption button:hover{
+    background-color: #d23147;
+    border-color: white;
+    color:  #fff;
+    font-weight: 600;
+
+}
+.carousel-control-prev-icon{
+    background-color: rgb(244, 89, 89) !important;
+    border-radius: 50%;
+    display: none !important;
+}
+.carousel-control-next-icon{
+    background-color: rgb(244, 89, 89) !important;
+    border-radius: 50%;
+    display: none !important;
+}
+.carousel-indicators button{
+    background-color: red !important;
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% ;
+    border: 2px solid rgb(255, 255, 255) !important;
+    outline: 2px solid red ;
+}
+
+.relative{
+    position: relative;
+    height: 100%;
+}
+/* start services section */
+.services_section{
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(4 , minmax(200px,1fr));
+    justify-content: center;
+}
+.services_section .service{
+    display: flex;
+    align-items: center;
+    
+    border: 1.5px solid #ccc;
+    padding: 10px;
+}
+.services_section .service h5{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.services_section .service p{
+    text-align: left;
+    color: gray;
+}
+.icon_service{
+    padding:20px;
+    font-size: 1.5rem;
+    color: #d23147;
+}
+/* end services section */
+@media screen {
+    .carousel-item img{
+        height: 80vh;
+    }
+    .carousel-caption h3{
+        font-weight: 3rem;
+    }
+}
+@media (max-width: 1150px) {
+    .carousel-item img{
+        height: 70vh;
+    }
+}
+@media (max-width: 970px) {
+    .services_section{
+        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    }
+    .carousel-item img{
+        height: 70vh;
+        width: 130% !important;
+    }
+    .caption{
+        font-size: 2rem;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+    .carousel-caption button{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 676px) {
+    .carousel-item img{
+        width: 150% !important;
+        height: 50vh;
+        position: relative;
+        left: -30%;
+    }
+    .caption{
+        font-size: 1.5rem;
+    }
+    .carousel-caption p{
+        font-size: .9rem;
+    }
+    .carousel-caption button{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 420px) {
+    .carousel-item img{
+        width: 200% !important;
+        height: 50vh;
+        position: relative;
+        left: -60%;
+    }
+}
