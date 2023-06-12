@@ -1,0 +1,49 @@
+
+.category_shop{
+    /* display: flex; */
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.category_btn{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+    width: 100%;
+}
+.category_btn button{
+    width: 15%;
+    padding: 5px 5px;
+    background-color: rgb(249, 51, 51);
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.category_btn button:hover{
+    background-color: #fff;
+    color: rgb(251, 25, 25);
+    border: 2px solid rgb(251, 25, 25);
+}
+.products_container{
+    margin: auto;
+}
+.page_num_container{
+    padding: 10px;
+}
+.page_num{
+    display: inline-block;
+    margin: auto;
+}
+
+
+@media (max-width: 980px) {
+    .category_btn{
+        flex-wrap: wrap;
+    }
+    .category_btn button{
+        min-width: 100px;
+        min-height: 40px;
+    }
+}

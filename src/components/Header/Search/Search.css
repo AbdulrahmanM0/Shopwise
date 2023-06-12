@@ -1,0 +1,29 @@
+.np_container{
+    width: 100%;
+    position: relative;
+}
+.Search_cart{
+    background-color: #fff;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.Search_cart a{
+    text-decoration: none;
+    color: #000;
+}
+.pro{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+.pro img{
+    width: 60px;
+    margin: 0 20px;
+}
+.pro h5{
+    font-size: 1rem;
+}
+.search_pro_container{
+    display: flex;
+    text-align: left;
+    height: 70px;
+}

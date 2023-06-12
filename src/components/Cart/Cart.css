@@ -1,0 +1,142 @@
+input::-webkit-outer-spin-button{
+    background-color: red;
+    width: 20px;
+}
+.cart_header{
+    background-color: #f4f2f2a5;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.cart_header h1{
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    text-align: center;
+    width: 40px;
+    margin: 0 5px;
+}
+input[type=number]:focus{
+    border: 0;
+    outline: 1px solid gray;
+}
+.number_btn svg{
+    font-size: 1.5rem;
+    color: #4c4c4c;
+    cursor: pointer;
+    outline: 2px solid #000;
+    border-radius: 50%;
+}
+.number_btn svg:hover{
+    color: #202020;
+
+}
+.products_col img{
+    width: 100px;
+    height: 110px;
+}
+.products_col{
+    display: flex;
+    align-items: center;
+}
+table{
+    width: 100%;
+    vertical-align: middle;
+}
+table tr:nth-child(1){
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+table tr{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6,1fr);
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+    vertical-align: inherit;
+}
+table tr td{
+    vertical-align: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.1rem;
+}
+.delete_product{
+    cursor: pointer;
+}
+.delete_product:hover{
+    color: red;
+}
+.cart_table{
+    padding: 60px 0;
+    margin-bottom: 20px;
+}
+.cart_split{
+    color: #ccc;
+    font-size: 2rem;
+    position: relative;
+}
+.cart_split::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.cart_split::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.relative{
+    position: relative;
+}
+.cart_total{
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+.cart_total h4{
+    font-weight: 800;
+
+}
+
+.cart_total button{
+    background-color: rgb(247, 40, 40);
+    color: #fff;
+    padding: 5px 10px;
+}
+.cart_item{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.cart_item div:first-child{
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    table{
+        width: 600px;
+       
+    }
+    .cart_table{
+        overflow-x: auto;
+    }
+}

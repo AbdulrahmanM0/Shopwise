@@ -19,6 +19,14 @@
     padding: 10px;
     /* background-color: aquamarine; */
 }
+.product_card .product_details a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.product_card .product_details a:active{
+    color: rgb(252, 41, 41);
+}
 .product_card .product_details h4{
     font-size: 1rem;
     font-weight: 600;
@@ -35,6 +43,8 @@
     color: gray;
     font-size: .9rem;
     justify-content: center;
+    align-items: center;
+    height: 20px;
 }
 .product_card .rating .count{
     margin: 0 5px;
@@ -45,6 +55,9 @@
 .product_card:hover .product_hover{
     top: 0;
 }
+/* .product_card:active .product_hover{
+    top: 0;
+} */
 .product_card:hover .addToCart_container{
     top: 0;
 }

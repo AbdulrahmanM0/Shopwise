@@ -4,36 +4,54 @@ import "./Carousel.css";
 
 import axios from "axios";
 import { useEffect , useState } from "react";
-import Spin from './../Spinner/Spinner';
-import ProductCard from "../ProductsSection/Products/ProductCard";
+import Spin from '../../Spinner/Spinner';
+import ProductCard from "../../ProductsSection/Products/ProductCard";
 
 function SimpleSlider(){
   const [trending , setTrending] = useState([]);
   useEffect(()=>{
       axios.get('https://fakestoreapi.com/products?limit=5').then(res=>setTrending(res.data))
   },[]);
-    function responsivWidth(){
-      let w = window.innerWidth;
-      if(w >= 1370){
-        return 5;
-      }else if(w <= 1369 && w >= 975){
-        return 4;
-      }else if(w <= 974 && w >= 762){
-      return 3;
-      }else if(w <= 761 && w >= 455){
-      return 2;
-      }else{
-        return 1;
-      }
-    }
+    // function responsivWidth(){
+    //   let w = window.innerWidth;
+    //   if(w >= 1370){
+    //     return 4;
+    //   }else if(w <= 1369 && w >= 975){
+    //     return 4;
+    //   }else if(w <= 974 && w >= 762){
+    //   return 3;
+    //   }else if(w <= 761 && w >= 455){
+    //   return 2;
+    //   }else{
+    //     return 1;
+    //   }
+    // }
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: responsivWidth(),
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       autoplayspeed: 3000,
+      responsive:[
+        {breakpoint:975,
+        settings:{
+          slidesToShow: 3,
+          slidesToScroll:1
+        }},{
+        breakpoint:765,
+        settings:{
+          slidesToShow: 2,
+          slidesToScroll:1
+        }},{
+        breakpoint:455,
+        settings:{
+          slidesToShow: 1,
+          slidesToScroll:1
+        }},
+
+      ]
     };
     return (
       <div className="container trending_carousel">

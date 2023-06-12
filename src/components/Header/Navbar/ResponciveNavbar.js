@@ -1,4 +1,3 @@
-
 import ResponciveNavlist from "../ResponsiveNavlist";
 
 function ResponciveNavebar() {

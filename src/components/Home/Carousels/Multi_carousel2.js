@@ -1,11 +1,10 @@
 import Slider from "react-slick";
-
-import img1 from "../../assets/sliders/slider-1/furniture_insta1.jpg";
-import img2 from "../../assets/sliders/slider-1/furniture_insta2.jpg";
-import img3 from "../../assets/sliders/slider-1/furniture_insta3.jpg";
-import img4 from "../../assets/sliders/slider-1/furniture_insta4.jpg";
-import img5 from "../../assets/sliders/slider-1/furniture_insta5.jpg";
-import img6 from "../../assets/sliders/slider-1/furniture_insta6.jpg";
+import img1 from "../../../assets/sliders/slider-1/furniture_insta1.jpg";
+import img2 from "../../../assets/sliders/slider-1/furniture_insta2.jpg";
+import img3 from "../../../assets/sliders/slider-1/furniture_insta3.jpg";
+import img4 from "../../../assets/sliders/slider-1/furniture_insta4.jpg";
+import img5 from "../../../assets/sliders/slider-1/furniture_insta5.jpg";
+import img6 from "../../../assets/sliders/slider-1/furniture_insta6.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,7 +14,7 @@ function Multi_carousel2() {
         infinite: true,
         arrows: false,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplayspeed: 3000,

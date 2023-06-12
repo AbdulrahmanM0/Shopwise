@@ -1,9 +1,11 @@
 import { useEffect , useState} from "react";
-import axios from "axios";
-import ProductCard from "./ProductCard";
-import "./productCard.css";
-import "../ProductSection.css";
 import Spin from './../../Spinner/Spinner';
+import ProductCard from "./ProductCard";
+import axios from "axios";
+import "../ProductSection.css";
+import "./productCard.css";
+
+
 
 function Product() {
     const [product , setProduct] = useState([])
@@ -12,10 +14,12 @@ function Product() {
         .then(res=>setProduct(res.data))}
         ,[])
     return ( 
+        <>
         <div className="products_container">
-            {product.length > 0 ? product.map(product=><div key={product.id}><ProductCard img={product.image} title={product.title} price={product.price} rate={product.rating.rate} rateCount={product.rating.count}/></div>) : <Spin />}
+            {product.length > 0 ? product.map(product=><div key={product.id}><ProductCard productId={product.id} img={product.image} title={product.title} price={product.price} rate={product.rating.rate} rateCount={product.rating.count}/></div>) : <Spin />}
         </div>
-     );
+        </>
+    );
 }
 
 export default Product;

@@ -1,7 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot , faEnvelope , faPhone , faFacebook , faTwitter , faGooglePlus , faYouTube , faInstagramSquare , faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
+import { useState , useRef } from 'react';
+import axios from 'axios';
 
 function Footer_options() {
+    const [mail , setMail] = useState('');
+    const mailHolder = useRef(null);
+    function sendMail(){
+        axios.post('http://localhost:4000/mails',{
+            mail:mail
+        }).then(res=>res);
+        mailHolder.current.value = '';
+    }
+    function handlInput(e){
+        setMail(e.target.value)
+    }
+
     return ( 
         <div className="footer_options">
             <div className="list">
@@ -43,8 +57,8 @@ function Footer_options() {
                 <h5>Subscribe Our Newsletter</h5>
                 <p>If you want to get an email from us every time we <br/> have a new special offer, then sign up here!</p>
                 <div className='mail_sender'>
-                    <input type='email' placeholder='Enter your mail' />
-                    <button ><FontAwesomeIcon icon={faEnvelopeOpenText} /></button>
+                    <input type='email' ref={mailHolder} onChange={(e)=>handlInput(e)} placeholder='Enter your mail' />
+                    <button onClick={()=>sendMail()}><FontAwesomeIcon icon={faEnvelopeOpenText} /></button>
                 </div>
 
             </div>

@@ -14,6 +14,7 @@ header{
     box-shadow: 0px 2px 5px var(--shadow);
     z-index: 199;
     position: fixed;
+    top: 0;
     background-color: #fff;
     width: 100%;
 }
@@ -30,16 +31,19 @@ header{
 }
 .nav_list{
     display: flex;
+    align-items: center;
     margin: 0;
 }
 
-.nav_list li{
+.nav_list li a{
     margin-left: 20px;
     font-weight: 600;
     font-size: .9rem;
     transition: .2s;
+    text-decoration: none;
+    color: #000;
 }
-.nav_list li:hover{
+.nav_list li a:hover{
     color: rgb(255, 77, 0);
     cursor: pointer;
 }
@@ -72,6 +76,7 @@ header{
     right: 20px;
     color: #fff;
     font-size: 1.5rem;
+    z-index: 50;
 }
 .search_box input{
     width: 100%;
@@ -114,11 +119,14 @@ header{
     display: none;
     /* transform: scaleY(0); */
 }
-.responcive_list li{
+.responcive_list li a{
+    display:inline-block;
+    width: 100%;
     padding: 10px;
-
+    text-decoration: none;
+    color: #000;
 }
-.responcive_list li:hover{
+.responcive_list li a:hover{
     background-color: var(--shadow);
     cursor: pointer;
     color: var(--hover-color);

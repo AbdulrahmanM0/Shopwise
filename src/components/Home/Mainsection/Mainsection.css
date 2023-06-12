@@ -28,10 +28,12 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.carousel-caption button{
+.carousel-caption a{
     cursor: pointer;
+    text-decoration: none;
+    color: #d23147;
 }
-.carousel-caption button:hover{
+.carousel-caption a:hover{
     background-color: #d23147;
     border-color: white;
     color:  #fff;

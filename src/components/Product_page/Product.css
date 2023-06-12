@@ -1,0 +1,120 @@
+.product_details_page{
+    display: flex;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+.product_imgs{
+    margin: 20px;
+}
+.wide_img{
+    width: 410px;
+    height: 440px;
+    border: 5px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wide_img .img{
+    width: 410px;
+    height: 440px;
+    /* position: relative; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wide_img .img:hover{
+    width: 800px;
+    height: 800px;
+    
+}
+.narro_img{
+    display: flex;
+    margin: 4px 0;
+}
+.narro_img img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ccc;
+    padding: 10px;
+    margin-right: 4px;
+}
+
+/* start dis */
+.product_dis{
+    padding: 30px 20px;
+    text-align: left;
+}
+.product_dis h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.product_dis .product_price{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(246, 42, 42);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.add_cart_part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+}
+.add_cart_part button{
+    
+}
+.add_and_get{
+    display: flex;
+}
+.add_to_cart_btn{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: rgb(246, 42, 42);
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.add_to_cart_btn:hover{
+    color: rgb(246, 42, 42);
+    background-color: #fff;
+    border: 2px solid rgb(246, 42, 42);
+}
+.category_part{
+    font-weight: 600;
+}
+.category_part span{
+    font-size: 1.2rem;
+    color: gray;
+}
+@media (max-width: 1030px) {
+    .add_cart_part{
+        width: 100%;
+    }
+    .product_details_page{
+        display: block;
+    }
+    .product_imgs{
+        display: flex;
+        justify-content: center;
+    }
+    .narro_img{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 20px;
+    }
+    .narro_img img{
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 790px) {
+    .product_dis{
+        padding: 30px 0;
+    }
+}
+/* end dis */

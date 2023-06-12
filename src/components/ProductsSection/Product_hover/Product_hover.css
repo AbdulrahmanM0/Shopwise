@@ -7,11 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: gray;
+    color: rgb(62, 61, 61);
     background-color: #cccccc57;
 }
-
-.product_hover .icon{
+.product_hover a{
+    display: inline-block;
+    color: #7171707c;
+}
+.product_hover .icon {
     padding: 8px;
     background-color: #fff;
     border-radius: 50%;
@@ -31,6 +34,7 @@
     top: 165%;
     left: 0;
     text-align: center;
+    z-index: 100;
 }
 
 .addToCart_container button{
